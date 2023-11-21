@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(197, 224, 224);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+header {
+    background-color: #3498db; /* Blue header background */
+    color: white;
+    background-image: url('img/headd.jpg');
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    margin: 0 10px; /* Optional: Add some space between the images */
+}
+
+#header-text {
+    clear: both;
+}
+
+#main {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    color: #333;
+}
+
+#main img {
+    max-width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    #main {
+        padding: 20px;
+    }
+
+    #logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo img {
+        margin: 10px 0; 
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 25px;
+    }
+
+    #main {
+        padding: 30px;
+    }
+
+    #logo {
+        flex-direction: row; 
+        justify-content: center;
+    }
+}
